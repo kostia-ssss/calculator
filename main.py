@@ -6,7 +6,7 @@ app = QApplication([])
 from UI import *
 
 window = QWidget()
-window.resize(100, 500)
+window.resize(200, 200)
 window.setWindowTitle("Калькулятор")
 window.show()
 
@@ -200,7 +200,6 @@ def click_C():
 def click_prozent():
     label.setText(str(float(label.text()) / 100))
 def click_otmena():
-    #label.setText(label.text().replace(label.text()[-1] , "" , 1))
     label.setText(label.text()[:-1])
 
 btn0.clicked.connect(click0)

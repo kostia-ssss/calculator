@@ -26,7 +26,7 @@ btn_CE = QPushButton("CE")
 btn_prozent = QPushButton("%")
 btn_otmena = QPushButton("<-")
 
-label = QLabel("")
+label = QLabel("0")
 label2 = QLabel("")
 
 main_line = QVBoxLayout()
