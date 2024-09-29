@@ -19,25 +19,55 @@ d = False
 e = False
 
 def click0():
-    label.setText(label.text() + "0")
+    if label.text() == "0":
+        label.setText("0")
+    else:
+        label.setText(label.text() + "0")
 def click1():
-    label.setText(label.text() + "1")
+    if label.text() == "0":
+        label.setText("1")
+    else:
+        label.setText(label.text() + "1")
 def click2():
-    label.setText(label.text() + "2")
+    if label.text() == "0":
+        label.setText("2")
+    else:
+        label.setText(label.text() + "2")
 def click3():
-    label.setText(label.text() + "3")
+    if label.text() == "0":
+        label.setText("3")
+    else:
+        label.setText(label.text() + "3")
 def click4():
-    label.setText(label.text() + "4")
+    if label.text() == "0":
+        label.setText("4")
+    else:
+        label.setText(label.text() + "4")
 def click5():
-    label.setText(label.text() + "5")
+    if label.text() == "0":
+        label.setText("5")
+    else:
+        label.setText(label.text() + "5")
 def click6():
-    label.setText(label.text() + "6")
+    if label.text() == "0":
+        label.setText("6")
+    else:
+        label.setText(label.text() + "6")
 def click7():
-    label.setText(label.text() + "7")
+    if label.text() == "0":
+        label.setText("7")
+    else:
+        label.setText(label.text() + "7")
 def click8():
-    label.setText(label.text() + "8")
+    if label.text() == "0":
+        label.setText("8")
+    else:
+        label.setText(label.text() + "8")
 def click9():
-    label.setText(label.text() + "9")
+    if label.text() == "0":
+        label.setText("9")
+    else:
+        label.setText(label.text() + "9")
 def click_inverse():
     label.setText(str(1 / float(label.text())))
 def click_sqr():
@@ -102,30 +132,130 @@ def click_plus():
     global a
     global b
     b = True
-    a = float(label.text())
-    label2.setText(label.text() + "+")
-    label.setText("")
+    try:
+        a = float(label.text())
+        label2.setText(label.text() + "+")
+        label.setText("")
+    except:
+        label.setText("Error")
+        btn_prozent.setEnabled(False)
+        btn_otmena.setEnabled(False)
+        btn_inverse.setEnabled(False)
+        btn_sqr.setEnabled(False)
+        btn_sqrt.setEnabled(False)
+        btn_delenie.setEnabled(False)
+        btn7.setEnabled(False)
+        btn8.setEnabled(False)
+        btn9.setEnabled(False)
+        btn_mul.setEnabled(False)
+        btn4.setEnabled(False)
+        btn5.setEnabled(False)
+        btn6.setEnabled(False)
+        btn_minus.setEnabled(False)
+        btn1.setEnabled(False)
+        btn2.setEnabled(False)
+        btn3.setEnabled(False)
+        btn_plus.setEnabled(False)
+        btn_inv.setEnabled(False)
+        btn0.setEnabled(False)
+        btn_coma.setEnabled(False)
+        btn_ravno.setEnabled(False)      
 def click_minus():
     global a
     global c
     c = True
-    a = float(label.text())
-    label2.setText(label.text() + "-")
-    label.setText("")
+    try:
+        a = float(label.text())
+        label2.setText(label.text() + "+")
+        label.setText("")
+    except:
+        label.setText("Error")
+        btn_prozent.setEnabled(False)
+        btn_otmena.setEnabled(False)
+        btn_inverse.setEnabled(False)
+        btn_sqr.setEnabled(False)
+        btn_sqrt.setEnabled(False)
+        btn_delenie.setEnabled(False)
+        btn7.setEnabled(False)
+        btn8.setEnabled(False)
+        btn9.setEnabled(False)
+        btn_mul.setEnabled(False)
+        btn4.setEnabled(False)
+        btn5.setEnabled(False)
+        btn6.setEnabled(False)
+        btn_minus.setEnabled(False)
+        btn1.setEnabled(False)
+        btn2.setEnabled(False)
+        btn3.setEnabled(False)
+        btn_plus.setEnabled(False)
+        btn_inv.setEnabled(False)
+        btn0.setEnabled(False)
+        btn_coma.setEnabled(False)
+        btn_ravno.setEnabled(False)      
 def click_mul():
     global a
     global d
     d = True
-    a = float(label.text())
-    label2.setText(label.text() + "*")
-    label.setText("")
+    try:
+        a = float(label.text())
+        label2.setText(label.text() + "+")
+        label.setText("")
+    except:
+        label.setText("Error")
+        btn_prozent.setEnabled(False)
+        btn_otmena.setEnabled(False)
+        btn_inverse.setEnabled(False)
+        btn_sqr.setEnabled(False)
+        btn_sqrt.setEnabled(False)
+        btn_delenie.setEnabled(False)
+        btn7.setEnabled(False)
+        btn8.setEnabled(False)
+        btn9.setEnabled(False)
+        btn_mul.setEnabled(False)
+        btn4.setEnabled(False)
+        btn5.setEnabled(False)
+        btn6.setEnabled(False)
+        btn_minus.setEnabled(False)
+        btn1.setEnabled(False)
+        btn2.setEnabled(False)
+        btn3.setEnabled(False)
+        btn_plus.setEnabled(False)
+        btn_inv.setEnabled(False)
+        btn0.setEnabled(False)
+        btn_coma.setEnabled(False)
+        btn_ravno.setEnabled(False)      
 def click_delenie():
     global a
     global e
     e = True
-    a = float(label.text())
-    label2.setText(label.text() + "/")
-    label.setText("")
+    try:
+        a = float(label.text())
+        label2.setText(label.text() + "+")
+        label.setText("")
+    except:
+        label.setText("Error")
+        btn_prozent.setEnabled(False)
+        btn_otmena.setEnabled(False)
+        btn_inverse.setEnabled(False)
+        btn_sqr.setEnabled(False)
+        btn_sqrt.setEnabled(False)
+        btn_delenie.setEnabled(False)
+        btn7.setEnabled(False)
+        btn8.setEnabled(False)
+        btn9.setEnabled(False)
+        btn_mul.setEnabled(False)
+        btn4.setEnabled(False)
+        btn5.setEnabled(False)
+        btn6.setEnabled(False)
+        btn_minus.setEnabled(False)
+        btn1.setEnabled(False)
+        btn2.setEnabled(False)
+        btn3.setEnabled(False)
+        btn_plus.setEnabled(False)
+        btn_inv.setEnabled(False)
+        btn0.setEnabled(False)
+        btn_coma.setEnabled(False)
+        btn_ravno.setEnabled(False)      
 def click_ravno():
     global a
     global b
@@ -174,7 +304,7 @@ def click_ravno():
         e = False
         label2.setText("")
 def click_C():
-    label.setText("")
+    label.setText("0")
     label2.setText("")
     btn_prozent.setEnabled(True)    
     btn_otmena.setEnabled(True)
