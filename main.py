@@ -176,7 +176,7 @@ def click_ravno():
 def click_C():
     label.setText("")
     label2.setText("")
-    btn_prozent.setEnabled(True)
+    btn_prozent.setEnabled(True)    
     btn_otmena.setEnabled(True)
     btn_inverse.setEnabled(True)
     btn_sqr.setEnabled(True)
