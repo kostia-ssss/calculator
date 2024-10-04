@@ -4,6 +4,7 @@ import math
 app = QApplication([])
 
 from UI import *
+from style import style
 
 window = QWidget()
 window.resize(200, 200)
@@ -11,6 +12,8 @@ window.setWindowTitle("Калькулятор")
 window.show()
 
 window.setLayout(main_line)
+
+app.setStyleSheet(style)
 
 a = 0
 b = False
@@ -166,7 +169,7 @@ def click_minus():
     c = True
     try:
         a = float(label.text())
-        label2.setText(label.text() + "+")
+        label2.setText(label.text() + "-")
         label.setText("")
     except:
         label.setText("Error")
@@ -198,7 +201,7 @@ def click_mul():
     d = True
     try:
         a = float(label.text())
-        label2.setText(label.text() + "+")
+        label2.setText(label.text() + "*")
         label.setText("")
     except:
         label.setText("Error")
@@ -230,7 +233,7 @@ def click_delenie():
     e = True
     try:
         a = float(label.text())
-        label2.setText(label.text() + "+")
+        label2.setText(label.text() + "/")
         label.setText("")
     except:
         label.setText("Error")
