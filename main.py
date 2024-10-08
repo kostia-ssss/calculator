@@ -1,3 +1,4 @@
+# importing modules
 from PyQt5.QtWidgets import QWidget, QApplication
 import math
 
@@ -6,6 +7,7 @@ app = QApplication([])
 from UI import *
 from style import style
 
+# settings
 window = QWidget()
 window.resize(200, 200)
 window.setWindowTitle("Калькулятор")
@@ -15,12 +17,14 @@ window.setLayout(main_line)
 
 app.setStyleSheet(style)
 
+# variables
 a = 0
 b = False
 c = False
 d = False
 e = False
 
+# functions
 def click0():
     if label.text() == "0":
         label.setText("0")
@@ -336,6 +340,7 @@ def click_prozent():
 def click_otmena():
     label.setText(label.text()[:-1])
 
+# connecting
 btn0.clicked.connect(click0)
 btn1.clicked.connect(click1)
 btn2.clicked.connect(click2)
